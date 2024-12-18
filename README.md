@@ -1,9 +1,30 @@
 **Final Project**
 
-### Introduction
+``` 
+██ ███    ██ ████████ ██████   ██████  ██████  ██    ██  ██████ ████████ ██  ██████  ███    ██ 
+██ ████   ██    ██    ██   ██ ██    ██ ██   ██ ██    ██ ██         ██    ██ ██    ██ ████   ██ 
+██ ██ ██  ██    ██    ██████  ██    ██ ██   ██ ██    ██ ██         ██    ██ ██    ██ ██ ██  ██ 
+██ ██  ██ ██    ██    ██   ██ ██    ██ ██   ██ ██    ██ ██         ██    ██ ██    ██ ██  ██ ██ 
+██ ██   ████    ██    ██   ██  ██████  ██████   ██████   ██████    ██    ██  ██████  ██   ████
+This project demonstrates the design and implementation of a microservices architecture using a
+suite of independent services that work together seamlessly.
+```    
+![Untitled diagram-2024-12-18-215220](https://github.com/user-attachments/assets/39db7d63-7e15-4866-9336-89ac94eeca04)
+High level diagram.
 
-This project demonstrates the design and implementation of a microservices architecture using a suite of independent services that work together seamlessly.
+![Untitled diagram-2024-12-18-215703](https://github.com/user-attachments/assets/783bcfcd-6e14-4919-a078-bed39ee1ef73)
+Kakfa flow (High level)
 
+![Untitled diagram-2024-12-18-215517](https://github.com/user-attachments/assets/b852cd86-6b50-46c5-a9bb-7745de7e26fe)
+Orders - Saga Pattern
+
+``` 
+██████  ███████ ██████   ██████  ███████ ██ ████████  ██████  ██████  ██ ███████ ███████ 
+██   ██ ██      ██   ██ ██    ██ ██      ██    ██    ██    ██ ██   ██ ██ ██      ██      
+██████  █████   ██████  ██    ██ ███████ ██    ██    ██    ██ ██████  ██ █████   ███████ 
+██   ██ ██      ██      ██    ██      ██ ██    ██    ██    ██ ██   ██ ██ ██           ██ 
+██   ██ ███████ ██       ██████  ███████ ██    ██     ██████  ██   ██ ██ ███████ ███████                                                                           
+```    
 ---
 
 ### Utility Services
@@ -43,11 +64,16 @@ This project demonstrates the design and implementation of a microservices archi
 - **Order Service** (https://github.com/j0rgel0/ms_orderservice)
   - Manages the creation, tracking, and fulfillment of customer orders.
 
----
 
-### Messaging and Observability
-
-#### Messaging with Kafka
+``` 
+███    ███ ███████ ███████ ███████  █████   ██████  ██ ███    ██  ██████  
+████  ████ ██      ██      ██      ██   ██ ██       ██ ████   ██ ██       
+██ ████ ██ █████   ███████ ███████ ███████ ██   ███ ██ ██ ██  ██ ██   ███ 
+██  ██  ██ ██           ██      ██ ██   ██ ██    ██ ██ ██  ██ ██ ██    ██ 
+██      ██ ███████ ███████ ███████ ██   ██  ██████  ██ ██   ████  ██████
+Messaging with Kafka
+```    
+#### 
 - **Apache Kafka** is used for event-driven communication between microservices.
   - Topics include:
     - `auth-events` for authentication-related events.
@@ -56,7 +82,15 @@ This project demonstrates the design and implementation of a microservices archi
     - `payment-events` for payment processing.
   - Kafka enables reliable, asynchronous communication, improving system resilience and scalability.
 
-#### Observability with Grafana Stack
+``` 
+ ██████  ██████  ███████ ███████ ██████  ██    ██  █████  ██████  ██ ██      ██ ████████ ██    ██ 
+██    ██ ██   ██ ██      ██      ██   ██ ██    ██ ██   ██ ██   ██ ██ ██      ██    ██     ██  ██  
+██    ██ ██████  ███████ █████   ██████  ██    ██ ███████ ██████  ██ ██      ██    ██      ████   
+██    ██ ██   ██      ██ ██      ██   ██  ██  ██  ██   ██ ██   ██ ██ ██      ██    ██       ██    
+ ██████  ██████  ███████ ███████ ██   ██   ████   ██   ██ ██████  ██ ███████ ██    ██       ██    
+                            Observability with Grafana Stack
+``` 
+#### 
 - **Grafana** provides dashboards for real-time monitoring of system metrics.
 - **Loki** aggregates logs from all microservices, enabling centralized log analysis and troubleshooting.
 - **Prometheus** is integrated for metrics collection and alerting.
@@ -67,12 +101,13 @@ This project demonstrates the design and implementation of a microservices archi
 
 ---
 ``` 
- ███████ ████████ ███████ ██████  ███████ 
- ██         ██    ██      ██   ██ ██      
- ███████    ██    █████   ██████  ███████ 
-      ██    ██    ██      ██           ██ 
- ███████    ██    ███████ ██      ███████
-Local Setup Instructions for Microservices    
+
+███████ ███████ ████████ ██    ██ ██████      ███████ ████████ ███████ ██████  ███████ 
+██      ██         ██    ██    ██ ██   ██     ██         ██    ██      ██   ██ ██      
+███████ █████      ██    ██    ██ ██████      ███████    ██    █████   ██████  ███████ 
+     ██ ██         ██    ██    ██ ██               ██    ██    ██      ██           ██ 
+███████ ███████    ██     ██████  ██          ███████    ██    ███████ ██      ███████ 
+   Local Setup Instructions for Microservices    
 ```                                       
 ## Prerequisites
 Make sure the following tools are installed on your system:

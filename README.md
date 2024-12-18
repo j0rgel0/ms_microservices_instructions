@@ -31,14 +31,17 @@ This project demonstrates the design and implementation of a microservices archi
 - **Auth Service** (https://github.com/j0rgel0/ms_authservice)
   - Handles user authentication and JWT-based authorization.
 
-- **Order Service** (https://github.com/j0rgel0/ms_orderservice)
-  - Manages the creation, tracking, and fulfillment of customer orders.
+- **Product Catalog Service** (https://github.com/j0rgel0/ms_productcatalogservice)
+  - Responsible for managing product information.
 
 - **Inventory Service** (https://github.com/j0rgel0/ms_inventoryservice)
   - Tracks product availability and updates stock levels based on processed orders.
 
 - **Payment Service** (https://github.com/j0rgel0/ms_paymentservice)
   - Facilitates order payment processing and communicates status updates.
+  
+- **Order Service** (https://github.com/j0rgel0/ms_orderservice)
+  - Manages the creation, tracking, and fulfillment of customer orders.
 
 ---
 

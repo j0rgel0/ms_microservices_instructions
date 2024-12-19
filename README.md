@@ -64,6 +64,8 @@ Orders - Saga Pattern
 - **Order Service** (https://github.com/j0rgel0/ms_orderservice)
   - Manages the creation, tracking, and fulfillment of customer orders.
 
+![image](https://github.com/user-attachments/assets/f51a8c64-a48d-4102-b1fc-e83e1e304724)
+Just a pic from Eureka dashboard at http://localhost:8761/
 
 ``` 
 ███    ███ ███████ ███████ ███████  █████   ██████  ██ ███    ██  ██████  
